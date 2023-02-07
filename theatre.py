@@ -44,15 +44,3 @@ def play_movie(movie_dir):
             else:
                 print("Choose a valid index!")
                 return 0
-
-# if __name__ == "__main__":
-#     print(f"Welcome to Theatre-CLI, {os.environ.get('USERNAME')} ")
-#     dir_req = input("Do you want to make a directory for movies? (y/n): ").lower()
-#     movie_dir = f"{home_dir}/Videos/movies"
-#     if dir_req == 'y':
-#         movie_dir = set_movie_dir()
-#         play_movie(movie_dir)
-#     elif dir_req == 'n':
-#         play_movie(movie_dir)
-#     else:
-#         print("Please choose a valid option!")
