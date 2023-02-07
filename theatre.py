@@ -6,6 +6,7 @@ import json
 home_dir = os.path.expanduser('~')
 user_name = os.environ.get('USERNAME')
 
+
 def set_movie_dir():
     dir_name = input("Directory name? ")
     print(f"Creating directory /{dir_name} at {home_dir}/Videos")

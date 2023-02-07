@@ -9,15 +9,9 @@ https://user-images.githubusercontent.com/89043335/217032575-495a2c15-2b4a-4da3-
 - [mpv](https://mpv.io/)
 - [vlc](https://www.videolan.org/vlc/)
 
-## Installation
-```sh
-git clone https://github.com/virajsazzala/Theatre-CLI.git
-sudo cp Theatre-CLI/theatre.py /usr/local/lib
-rm -rf Theatre-cli
-```
-
-## Developer Note
-- Currently under development, and will be fully completed soon.
+## Setup
+- After cloning the repository, run the program by ```python3 theatre.py```
+- to make it accessible globally, alias it in your bashrc or zshrc file.
 
 
 
