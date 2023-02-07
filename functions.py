@@ -17,6 +17,7 @@ def set_movie_dir():
 def play_movie(movie_dir):
     filesincwd = os.listdir(movie_dir)
     if len(filesincwd) > 0:
+        print(f"Hey {user_name}, Welcome to Theatre-CLI!\nHope you are having a good day, even if you arent, it'll get better dw <3")
         print(f"In {movie_dir} directory:")
         for i in range(len(filesincwd)):
             print(f"{i}: {(filesincwd[i])[:-4]}")
@@ -44,3 +45,5 @@ def play_movie(movie_dir):
             else:
                 print("Choose a valid index!")
                 return 0
+    else:
+        print("Please add some movies to the specified movies dir!")

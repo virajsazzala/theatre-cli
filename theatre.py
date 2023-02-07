@@ -43,5 +43,4 @@ username = config_data[0]['username']
 home_dir =  config_data[0]['home_dir']
 
 # choose and play movie
-print(f"Hey {username}, Welcome to Theatre-CLI!\nHope you are having a good day, even if you arent, it'll get better dw <3")
 t.play_movie(movie_dir)
