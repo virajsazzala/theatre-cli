@@ -54,7 +54,7 @@ def play_movie(movie_dir):
 
 if __name__ == "__main__":
     # loading config.json file
-    with open('config.json') as f:
+    with open("config.json") as f:
         config_data = json.load(f)
 
     # Checking for first time setup
@@ -74,7 +74,7 @@ if __name__ == "__main__":
             exit(0)
 
         # addes the new configuration to config.json 
-        with open('config.json', 'w') as f:
+        with open("config.json", "w") as f:
             config_data = []
             config_data.append({
                 "first_time": "false",
