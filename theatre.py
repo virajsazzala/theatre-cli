@@ -38,7 +38,7 @@ def play_movie(movie_dir):
             print("Choose a valid index")
             return 0
         else:
-            player = int(input("Player:\n0: Mpv\n1: Vlc\nChoose: "))
+            player = int(input("Which Player do you prefer?\n0: Mpv\n1: Vlc\nChoose: "))
             if player == 0:
                 os.system(f"mpv {movie_dir}/{filesincwd[selection]}")
             elif player == 1:
