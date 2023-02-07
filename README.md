@@ -12,7 +12,8 @@ https://user-images.githubusercontent.com/89043335/217032575-495a2c15-2b4a-4da3-
 ## Installation
 ```sh
 git clone https://github.com/virajsazzala/Theatre-CLI.git
-sudo cp 
+sudo cp Theatre-CLI/theatre.py /usr/local/lib
+rm -rf Theatre-cli
 ```
 
 ## Developer Note
