@@ -6,10 +6,9 @@ with open("README.rst", "r", encoding="utf-8") as readme_file:
 
 setup(
     name='theatre-cli',
-    version='0.1.2',
+    version='0.1.4',
     description='A command-line interface to play movies',
     long_description=long_description,
-    long_description_content_type='text/markdown',
     author='SNG Viraj Reddy',
     author_email='vir200319@gmail.com',
     url='https://github.com/virajsazzala/theatre-cli',
