@@ -1,9 +1,6 @@
 theatre-cli
 ===========
 
-.. image:: https://user-images.githubusercontent.com/89043335/217032575-495a2c15-2b4a-4da3-983d-dd6555194567.mp4
-   :target: https://user-images.githubusercontent.com/89043335/217032575-495a2c15-2b4a-4da3-983d-dd6555194567.mp4
-
 Overview
 --------
 
