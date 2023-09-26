@@ -1,10 +1,14 @@
 from setuptools import setup, find_packages
 
+
+with open("README.rst", "r", encoding="utf-8") as readme_file:
+    long_description = readme_file.read()
+
 setup(
     name='theatre-cli',
     version='0.1.0',
     description='A command-line interface to play movies',
-    long_description=open('README.rst').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     author='SNG Viraj Reddy',
     author_email='vir200319@gmail.com',
