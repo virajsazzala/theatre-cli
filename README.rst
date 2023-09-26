@@ -1,5 +1,6 @@
+============================
 theatre-cli
-===========
+============================
 
 Overview
 --------
@@ -10,42 +11,40 @@ Features
 --------
 
 - Watch movies conveniently using a text-based interface.
-- Supports popular media players like `mpv <https://mpv.io/>`_ and `VLC <https://www.videolan.org/vlc/>`_.
+- Supports popular media players like mpv_ and VLC_.
 - Easy-to-use setup and configuration.
 - Compatible with Python 3.10 and higher.
 
 Installation
 ------------
 
-Prerequisites
-^^^^^^^^^^^^^
+- Prerequisites
 
-Before you can enjoy theatre-cli, ensure you have the following dependencies installed:
+   Before you can enjoy theatre-cli, ensure you have the following dependencies installed:
 
-- Python 3.10 (or higher)
-- `mpv <https://mpv.io/>`_
-- `VLC <https://www.videolan.org/vlc/>`_
+   - Python 3.10 (or higher)
+   - `mpv <https://mpv.io/>`_
+   - `VLC <https://www.videolan.org/vlc/>`_
 
-Installation Steps
-^^^^^^^^^^^^^^^^^^
+- Installation Steps
 
-1. Clone the repository:
+   1. Clone the repository:
 
-   .. code-block:: bash
-   
-      git clone https://github.com/yourusername/theatre-cli.git
+      .. code-block:: bash
+      
+         git clone https://github.com/yourusername/theatre-cli.git
 
-2. Change into the project directory:
+   2. Change into the project directory:
 
-   .. code-block:: bash
-   
-      cd theatre-cli
+      .. code-block:: bash
+      
+         cd theatre-cli
 
-2. Run the program using python 3:
+   3. Run the program using python 3:
 
-   .. code-block:: bash
-   
-      python3 theatre_cli.py
+      .. code-block:: bash
+      
+         python3 scrips/theatre_cli
 
 Usage
 -----
@@ -59,4 +58,5 @@ Contributions
 
 Contributions to theatre-cli are welcome! Whether you want to add features, fix bugs, or improve documentation, feel free to fork the repository and submit a pull request.
 
-
+.. _mpv: https://mpv.io/
+.. _VLC: https://www.videolan.org/vlc/
