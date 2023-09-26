@@ -1,4 +1,3 @@
-============================
 theatre-cli
 ============================
 
@@ -23,28 +22,22 @@ Installation
    Before you can enjoy theatre-cli, ensure you have the following dependencies installed:
 
    - Python 3.10 (or higher)
-   - `mpv <https://mpv.io/>`_
-   - `VLC <https://www.videolan.org/vlc/>`_
+   - mpv_
+   - VLC_
 
 - Installation Steps
 
    1. Clone the repository:
-
-      .. code-block:: bash
       
-         git clone https://github.com/yourusername/theatre-cli.git
+      ```git clone https://github.com/yourusername/theatre-cli.git```
 
    2. Change into the project directory:
-
-      .. code-block:: bash
       
-         cd theatre-cli
+      ```cd theatre-cli```
 
    3. Run the program using python 3:
 
-      .. code-block:: bash
-      
-         python3 scrips/theatre_cli
+      ```python3 scrips/theatre_cli```
 
 Usage
 -----
