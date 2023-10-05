@@ -4,6 +4,25 @@ import os
 from theatre_cli.config import load_config, save_config
 from theatre_cli.movie import set_movie_dir, list_movies
 from theatre_cli.player import choose_player_and_play
+import argparse
+
+
+def update_movie_path(directory):
+    print(f'Updating movie directory to: {directory}')
+    config_data = load_config()  # Load our config
+    if not config_data:
+        print("ERR: Config not set")
+        return
+
+    config_data[0]['movie_dir'] = directory  # Modify our config
+    save_config(config_data)  # Save it back down
+    return
+
+def is_valid_dir(directory):
+    if os.path.isdir(directory):
+        return directory
+    else:
+        raise argparse.ArgumentTypeError(f'{directory} is not a valid directory')
 
 def main():
     config_data = load_config()
@@ -26,6 +45,13 @@ def main():
             "movie_dir": movie_dir
         }]
         save_config(config_data)
+
+    parser = argparse.ArgumentParser(description='Theatre CLI')
+    parser.add_argument('--update-dir', metavar='PATH', type=is_valid_dir, help='the directory to set as movie path')
+    args = parser.parse_args()
+    if args.update_dir:
+        update_movie_path(args.update_dir)
+        config_data = load_config()  # Reload config data
 
     movie_dir = config_data[0]['movie_dir']
     choose_player_and_play(movie_dir)
