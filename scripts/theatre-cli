@@ -14,8 +14,8 @@ def update_movie_path(directory):
         print("ERR: Config not set")
         return
 
-    config_data[0]['movie_dir'] = directory  #Modify our config
-    save_config(config_data) #Save it back down
+    config_data[0]['movie_dir'] = directory  # Modify our config
+    save_config(config_data)  # Save it back down
     return
 
 def is_valid_dir(directory):
@@ -51,6 +51,7 @@ def main():
     args = parser.parse_args()
     if args.update_dir:
         update_movie_path(args.update_dir)
+        config_data = load_config()  # Reload config data
 
     movie_dir = config_data[0]['movie_dir']
     choose_player_and_play(movie_dir)
