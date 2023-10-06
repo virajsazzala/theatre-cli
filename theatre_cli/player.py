@@ -3,7 +3,6 @@ from theatre_cli.movie import list_movies, validate_movie_selection, MOVIE_EXTEN
 
 def play_movie(movie_file, player):
     players = ["mpv", "vlc"]
-    print(players[player] + " \"" + movie_file + "\"")
     if 0 <= player < len(players):
         os.system(players[player] + " \"" + movie_file + "\"")
     else:
