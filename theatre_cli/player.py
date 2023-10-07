@@ -9,15 +9,17 @@ def play_movie(movie_file, player):
         print("Choose a valid player!")
 
 def choose_player_and_play(movie_dir):
+    # Get movie list
     movie_files = list_movies(movie_dir)
-    
+    # Print empty movie
     if not movie_files:
         print("No movies found in the directory.")
         return
-
+    # Get number of movies
     num_movies = len(movie_files)
     
     while True:
+        # Print selection
         selection = input(f"Enter your choice (0 to {num_movies - 1}) or (q to quit): ")
         if selection == 'q':
             print("Bye bye! See you later <3")
