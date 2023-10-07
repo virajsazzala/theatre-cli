@@ -7,7 +7,9 @@ from theatre_cli.player import choose_player_and_play
 
 def main():
     config_data = load_config()
-
+    print("Read Successfull")
+    print(config_data);
+    
     if not config_data or config_data[0].get("first_time", "").lower() == "true":
         print('Performing first-time setup...')
         req_dir = int(input("Do you have a movies directory or would you like to make one?\n0: Use an existing one\n1: Make a new one\nEnter choice: "))
@@ -28,7 +30,6 @@ def main():
         save_config(config_data)
 
     movie_dir = config_data[0]['movie_dir']
-    choose_player_and_play(movie_dir)
-
+    choose_player_and_play(config_data)
 if __name__ == "__main__":
     main()

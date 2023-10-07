@@ -9,9 +9,9 @@ def play_movie(movie_file, player):
     else:
         print("Choose a valid player!")
 
-def choose_player_and_play(movie_dir):
+def choose_player_and_play(config_data):
     list_movies(movie_dir)
-    movie_files = [f for f in os.listdir(movie_dir) if os.path.isfile(os.path.join(movie_dir, f)) and f.lower().endswith(tuple(MOVIE_EXTENSIONS))]
+    movie_files = [f for f in os.listdir(config_data) if os.path.isfile(os.path.join(config_data, f)) and f.lower().endswith(tuple(MOVIE_EXTENSIONS))]
 
     if not movie_files:
         print("No movies found in the directory.")
