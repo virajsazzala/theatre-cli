@@ -1,6 +1,8 @@
 import json
-
-CONFIG_FILE = "config.json"
+import os
+# Using default .config directory for storing configuration file
+CONFIG_DIR = os.path.expanduser("~/.config/theatre-cli")
+CONFIG_FILE = os.path.join(CONFIG_DIR, "config.json")
 
 def load_config():
     try:
@@ -10,5 +12,6 @@ def load_config():
         return []
 
 def save_config(config_data):
+    os.makedirs(CONFIG_DIR, exist_ok=True)
     with open(CONFIG_FILE, "w") as f:
         json.dump(config_data, f, indent=2)
