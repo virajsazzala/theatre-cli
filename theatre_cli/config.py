@@ -1,6 +1,6 @@
 import json
 import os
-#Changing the target path to the new folder that we created accodring to linux folder structure conventions
+# Using default .config directory for storing configuration file
 CONFIG_DIR = os.path.expanduser("~/.config/theatre-cli")
 CONFIG_FILE = os.path.join(CONFIG_DIR, "config.json")
 
