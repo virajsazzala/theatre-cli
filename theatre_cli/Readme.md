@@ -58,7 +58,7 @@ save_config(config_data)
 print("Configuration Data Saved.")
 ```
 
-__________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________
 
 # Movies File
 
@@ -144,4 +144,79 @@ if valid_selection:
     print(f"Selected movie: {selected_movie.file}")
 else:
     print("Invalid selection. Please choose a valid movie.")
+```
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+# Players File
+
+# Overview
+
+The [players.py](http://players.py/) program provides an easy way to play movies from
+given directory. It allows a user to select a movie from the list
+of available movies in the directory and select a play mode
+that is MPV or VLC to play the chosen movie.
+
+### Functions
+
+`play_movie(movie_file, player)`
+
+- - Plays selected movie using the specified player
+
+## Code Sample
+
+```python
+play_movie("/path/to/selected_movie.mp4", 0)
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| movie_file(str) | string | This is a path to the selected movie file |
+| player(int) | int | It is an integer representing the choice of the
+player.
+0  -->  MPV
+1  -->  VLC |
+
+`choose_player_and_play(movie_dir)`
+
+Displays a list of movies in the specified directory, it allows the user to select a movie and prompts the user to select a player to play the selected movie.
+
+```python
+ choose_player_and_play("/path/to/movies/directory")
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| movie_dir(str) | str | The path to the directory containing movie files. |
+
+## How to use
+
+- Import the necessary functions from the module:
+
+```python
+from movie_player_cli import choose_player_and_play
+```
+
+- Call the **`choose_player_and_play(movie_dir)`** function, passing the path to the directory containing your movie files as an argument:
+
+```python
+choose_player_and_play("/path/to/movies/directory")
+```
+
+- The CLI will display a list of movies in the specified directory. Enter the index of the movie you want to play (from 0 to N-1, where N is the number of movies).
+- Choose a player by entering the corresponding number (0 for MPV, 1 for VLC).
+- The selected movie will start playing in the chosen player.
+- To quit the program, enter 'q' when prompted for movie selection.
+
+```python
+from movie_player_cli import choose_player_and_play
+
+# Specify the directory containing movie files
+movie_directory = "/path/to/movies/directory"
+
+# Start the CLI movie player
+choose_player_and_play(movie_directory)
 ```
