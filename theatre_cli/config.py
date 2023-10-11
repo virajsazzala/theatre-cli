@@ -1,6 +1,6 @@
 import yaml
 
-CONFIG_FILE = "config.yaml"
+CONFIG_FILE = "config.json"
 
 def load_config():
     try:
