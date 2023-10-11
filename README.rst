@@ -34,19 +34,27 @@ Installation Steps
 
    .. code-block:: bash
    
-      git clone https://github.com/yourusername/theatre-cli.git
-
-2. Change into the project directory:
-
-   .. code-block:: bash
-
+      git clone https://github.com/virajsazzala/theatre-cli.git
       cd theatre-cli
 
-3. Run the program using python 3:
+2. Create a virtual environment:
 
    .. code-block:: bash
-      
-      python3 scrips/theatre_cli
+
+      python -m venv venv
+      source venv/bin/activate
+
+3. Install requirements:
+
+   .. code-block:: bash
+
+      pip install -r requirements.txt
+
+4. Install the package in editable mode:
+
+   .. code-block:: bash
+
+      pip install -e .
 
 Usage
 -----
