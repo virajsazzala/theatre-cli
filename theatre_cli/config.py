@@ -1,17 +1,18 @@
-import json
-import os
-# Using default .config directory for storing configuration file
-CONFIG_DIR = os.path.expanduser("~/.config/theatre-cli")
-CONFIG_FILE = os.path.join(CONFIG_DIR, "config.json")
+import yaml
+
+CONFIG_FILE = "config.yaml"
+
 
 def load_config():
     try:
-        with open(CONFIG_FILE, "r") as f:
-            return json.load(f)
+        with open(CONFIG_FILE, "r") as yf:
+            # fullLoader converts yaml to py dict
+            return yaml.load(yf, Loader=yaml.FullLoader)
     except FileNotFoundError:
         return []
 
+
 def save_config(config_data):
-    os.makedirs(CONFIG_DIR, exist_ok=True)
-    with open(CONFIG_FILE, "w") as f:
-        json.dump(config_data, f, indent=2)
+    with open(CONFIG_FILE, "w") as yf:
+        yaml.dump(config_data, yf, indent=2)
+        print("Write successful")

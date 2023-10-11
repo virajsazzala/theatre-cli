@@ -54,7 +54,6 @@ def main():
         config_data = load_config()  # Reload config data
 
     movie_dir = config_data[0]['movie_dir']
-    choose_player_and_play(movie_dir)
-
+    choose_player_and_play(config_data)
 if __name__ == "__main__":
     main()
