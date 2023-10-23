@@ -21,4 +21,3 @@ def save_config(config_data):
     os.makedirs(CONFIG_DIR, exist_ok=True)
     with open(CONFIG_FILE, "w") as yf:
         yaml.dump(config_data, yf, indent=2)
-
