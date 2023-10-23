@@ -1,5 +1,6 @@
 import yaml
 import os
+
 # Using default .config directory for storing configuration file
 CONFIG_DIR = os.path.expanduser("~/.config/theatre-cli")
 CONFIG_FILE = os.path.join(CONFIG_DIR, "config.yaml")
@@ -18,3 +19,4 @@ def save_config(config_data):
     with open(CONFIG_FILE, "w") as yf:
         yaml.dump(config_data, yf, indent=2)
 
+ 

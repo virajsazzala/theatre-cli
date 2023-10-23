@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import os
 from theatre_cli.config import load_config, save_config
 from theatre_cli.movie import set_movie_dir, list_movies
